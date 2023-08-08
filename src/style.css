@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pages, .status{
+    display: flex;
+}
+main{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px
+}
+
+.img-container{
+    display: flex;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+article{
+    box-shadow: 2px 4px 6px black;
+}
+
+.info-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-estado{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.more-info{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.genero-especie, .locacion-id{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.genero, .especie, .locacion, .id{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    gap: 8px;
+    align-items: center;
+}
+
+
+/* .more-info .genero{
+    padding: 8px;
+    border-right: 1px solid black;
+} */
