@@ -3,71 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
-    <title>API Rick and Morty</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Personajes</h1>
-    <div class="filters">
-        <div class="pages">
-            <strong>Page</strong>
-            <select name="page" id="page" onchange="getCharacters(this.value)">
-            <script>
-                for (let i = 1; i <= 42; i++) {
-                    document.write(`<option value="${i}">${i}</option>`)
-                }
-                </script>
-            </select>
-        </div>
-        <div class="status">
-            <strong>Status</strong>
-            <select name="page" id="page" onchange="status(this.value)">
-                <script>
-                    let arr = ['Alive', 'Dead', 'unknown']
-                    for (let i = 0; i < arr.length; i++) {
-                        document.write(`<option value="${arr[i]}">${arr[i]}</option>`)
-                    }
-                    </script>
-                </select>
-        </div>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><button>Characters</buttons></li>
+                <li><button>Episodes</button></li>
+                <li><button>Location</button></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <!-- <article>
-            <div class="img-container">
-                <img src="https://rickandmortyapi.com/api/character/avatar/817.jpeg" alt="">
-            </div>
-            <div class="info-cards">
-                <div class="name-estado">
-                    <p>
-                        <strong>NAME</strong>
-                    </p>
-                    <p>estado</p>
-                </div>
-                <div class="more-info">
-                    <div class="genero-especie">
-                        <div class="especie">
-                            <img src="./src/img/icons8-punto-24.png" alt="">
-                            <p>especie</p>
-                        </div>
-                        <div class="genero">
-                            <img src="./src/img/icons8-gender-equality-24.png" alt="">
-                            <p>genero</p>
-                        </div>
-                    </div>
-                    <div class="locacion-id">
-                        <div class="locacion">
-                            <img src="./src/img/icons8-geo-cerca-24.png" alt="">
-                            <p>location</p>
-                        </div>
-                        <div class="id">
-                            <img src="./src/img/icons8-hashtag-24.png" alt="">
-                            <p>ID</p>
-                        </div>
+        <section id="sect-inputs">
+             <div id="div-search">
+                 <label for="search">Buscador <small>(name/id/location)</small></label>
+                 <input type="text" name="search" id="search">
+             </div>   
+             <label for="page">Pagina</label>
+             <select name="page" id="page">
+                <script>
+                    for (let i = 1; i < 42; i++) {
+                        document.write(`<option value="${i}">${i}</option>`)
+                    }
+                </script>
+             </select>
+             <label for="filter">Filtro</label>
+             <select name="filter" id="filter">
+                <option value="alive">alive</option>
+                <option value="dead">dead</option>
+                <option value="unknowd">unknowd</option>
+             </select>
+        </section>
+        <section id="cards-container">
+            <!-- <article>
+                <div class="img-smalls">
+                    <img src="" alt="">
+                    <div class="card-smalls">
+                        <small></small>
+                        <small></small>
                     </div>
                 </div>
-            </div>
-        </article> -->
-    </main>
-    <script src="/src/app.js"></script>
+                <h3></h3>
+                <button>ver más</button>
+            </article> -->
+        </section>
+    </main> 
+
+
+<script type="module" src="./src/app.mjs"></script>
 </body>
 </html>
