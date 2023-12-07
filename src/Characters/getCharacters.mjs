@@ -1,3 +1,4 @@
+
 const getCharacters = async (page) =>{
     const contendor = document.querySelector('#cards-container')
     contendor.innerHTML = ""

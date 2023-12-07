@@ -10,7 +10,7 @@
     <header>
         <nav>
             <ul>
-                <li><button>Characters</buttons></li>
+                <li><button id="characters">Characters</buttons></li>
                 <li><button id="episodes">Episodes</button></li>
                 <li><button id="location">Location</button></li>
             </ul>
@@ -19,22 +19,16 @@
     <main>
         <section id="sect-inputs">
              <div id="div-search">
-                 <label for="search">Buscador <small>(name/id/location)</small></label>
+                 <label for="search">Buscador <small id="small-input">(name/id/location)</small></label>
                  <input type="text" name="search" id="search">
              </div>   
              <label for="page">Pagina</label>
              <select name="page" id="page">
-                <script>
-                    for (let i = 1; i < 42; i++) {
-                        document.write(`<option value="${i}">${i}</option>`)
-                    }
-                </script>
+                
              </select>
              <label for="filter">Filtro</label>
              <select name="filter" id="filter">
-                <option value="Alive">Alive</option>
-                <option value="Dead">Dead</option>
-                <option value="unknown">unknown</option>
+                
              </select>
         </section>
         <section id="cards-container">
@@ -55,3 +49,4 @@
 <script type="module" src="./src/app.mjs"></script>
 </body>
 </html>
+

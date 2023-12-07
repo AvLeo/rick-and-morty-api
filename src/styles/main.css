@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,6 +9,7 @@
 body{
     background-color: #2f2f2f;
     color: white;
+    font-family:'Roboto', sans-serif;;
 }
 header{
     display: flex;
@@ -194,4 +197,12 @@ main{
     color: whitesmoke;
   }
   
-  
+  .card img {
+    height: 125px;
+  }
+
+  /* .div-img{
+    width: 190px;
+    height: 254px;
+    border: 2px solid white;
+  } */
