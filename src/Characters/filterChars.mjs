@@ -7,15 +7,25 @@ const filterChars =async (value) => {
 
         const result = data.results.filter( char => char.status === value)
             result.forEach(char => {
-            contendor.innerHTML += `<div class="card">
-        <p class="heading">
-            <img src="${char.image}" alt="">
-        </p>
-        <p>
-          ${char.name}
-        </p>
-        <p class="show-more">Ver Más
-      </p></div>`
+            contendor.innerHTML += `  <div class="card-container">
+            <div class="card">
+            <div class="front-content">
+              <img src="${char.image}" alt="">
+            </div>
+            <div class="content">
+              <p class="heading">${char.name}</p>
+              <div>
+                <div>
+                    <p><small>ID:</small> ${char.id}</p>
+                    <p><small>STATUS:</small> ${char.status}</p>
+                </div>
+                <div>
+                    <p><small>LOCATION:</small> ${char.location.name}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>`
         })
     }
 }

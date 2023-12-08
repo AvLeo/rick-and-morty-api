@@ -8,19 +8,25 @@ const filterLocation = async (value) =>{
         const result = data.results.filter( location => location.type.includes(value))
             result.forEach(location => {
             contendor.innerHTML += `
+            <div class="card-container">
             <div class="card">
-                    <img src="https://pyxis.nymag.com/v1/imgs/dcb/698/eea6b585943cfb9f9ce6048e514f174dbc-The-Old-Man-and-the-Seat.rhorizontal.w700.jpg" alt="">
-                    <p class="heading"> 
-                      ${location.name}
-                    </p>
-                    <p>
-                      ${location.type}
-                    </p>
-                    <p>Ver más
-                  </p></div>
-            `
+            <div class="front-content">
+              <img src="https://pyxis.nymag.com/v1/imgs/dcb/698/eea6b585943cfb9f9ce6048e514f174dbc-The-Old-Man-and-the-Seat.rhorizontal.w700.jpg" alt="">
+            </div>
+            <div class="content">
+              <p class="heading">${location.name}</p>
+              <div>
+                <div>
+                    <p><small>location:</small> ${location.episode}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+                    `
         })
     }
 }
 
 export { filterLocation }
+                    // <img src="https://pyxis.nymag.com/v1/imgs/dcb/698/eea6b585943cfb9f9ce6048e514f174dbc-The-Old-Man-and-the-Seat.rhorizontal.w700.jpg" alt="">
