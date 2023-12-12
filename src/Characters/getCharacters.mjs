@@ -6,7 +6,6 @@ const getCharacters = async (page) =>{
     const data = await res.json()
     
     data.results.forEach( char => {
-      console.log(char)
       contendor.innerHTML += `  <div class="card-container">
         <div class="card">
         <div class="front-content">

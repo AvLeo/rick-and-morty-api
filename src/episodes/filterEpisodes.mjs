@@ -17,7 +17,7 @@ const filterEpisodes = async (value) =>{
               <p class="heading">${episode.name}</p>
               <div>
                 <div>
-                    <p><small>EPISODE:</small> ${episode.episode}</p>
+                  <p><small>EPISODE:</small> ${episode.episode}</p>
                 </div>
               </div>
             </div>
@@ -28,4 +28,4 @@ const filterEpisodes = async (value) =>{
 }
 
 export { filterEpisodes }
-                    // <img src="./src/image/3D_Animation_Style_imagen_tipo_logo_de_rick_y_morty_con_paleta_1.jpg" alt="">
+// <img src="./src/image/3D_Animation_Style_imagen_tipo_logo_de_rick_y_morty_con_paleta_1.jpg" alt="">

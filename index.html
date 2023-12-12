@@ -10,27 +10,20 @@
     <header>
         <nav>
             <ul>
-                <li><button id="characters">Characters</buttons></li>
-                <li><button id="episodes">Episodes</button></li>
-                <li><button id="location">Location</button></li>
+                <li><button id="characters" class="statePage">Characters</buttons></li>
+                <li><button id="episodes" class="">Episodes</button></li>
+                <li><button id="location" class="">Location</button></li>
             </ul>
         </nav>
+        <section id="sect-inputs">
+            <input type="text" name="search" id="search" placeholder="Buscar por nombre">
+    
+            <select name="page" id="page"></select>
+    
+            <select name="filter" id="filter"></select>
+        </section>
     </header>
     <main>
-        <section id="sect-inputs">
-             <div id="div-search">
-                 <label for="search">Buscador <small id="small-input">(name/id/location)</small></label>
-                 <input type="text" name="search" id="search">
-             </div>   
-             <label for="page">Pagina</label>
-             <select name="page" id="page">
-                
-             </select>
-             <label for="filter">Filtro</label>
-             <select name="filter" id="filter">
-                
-             </select>
-        </section>
         <section id="cards-container">
               <!-- <div class="card-container">
                 <div class="card">
